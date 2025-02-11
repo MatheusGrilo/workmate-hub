@@ -7,8 +7,8 @@ import {
 } from "../../ui/navbar";
 import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
 import { Menu } from "lucide-react";
-import LaunchUI from "../../logos/launch-ui";
 import Link from "next/link";
+import WorkmateHub from "@/components/logos/workmate-hub";
 
 export default function Navbar() {
   return (
@@ -21,8 +21,8 @@ export default function Navbar() {
               href="/"
               className="flex items-center gap-2 text-xl font-bold"
             >
-              <LaunchUI />
-              Launch UI
+              <WorkmateHub className="size-12" />
+              Workmate Hub
             </Link>
             <Navigation />
           </NavbarLeft>
@@ -50,7 +50,7 @@ export default function Navbar() {
                     href="/"
                     className="flex items-center gap-2 text-xl font-bold"
                   >
-                    <span>Launch UI</span>
+                    <span>Workmate Hub</span>
                   </Link>
                   <Link
                     href="/"
