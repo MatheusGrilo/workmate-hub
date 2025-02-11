@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models import Company, Phone, Task
 
-# Register your models here.
+admin.site.register([Company, Phone, Task])
