@@ -38,7 +38,7 @@ export default function Hero() {
               <Button variant="default" size="lg" asChild>
                 <Link href="/">Get Started</Link>
               </Button>
-              <Button variant="secondary" size="lg" asChild>
+              <Button variant="outline" size="lg" asChild>
                 <Link
                   href="https://github.com/MatheusGrilo/workmate-hub"
                   target="_blank"
