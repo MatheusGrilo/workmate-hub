@@ -1,7 +1,8 @@
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import Link from "next/link";
 
 export function LoginForm({
   className,
@@ -32,6 +33,12 @@ export function LoginForm({
           </div>
           <Input id="password" type="password" required />
         </div>
+        <Link href="/dashboard">
+          {" "}
+          <Button type="submit" className="w-full">
+            Login mock
+          </Button>
+        </Link>
         <Button type="submit" className="w-full">
           Login
         </Button>
@@ -57,5 +64,5 @@ export function LoginForm({
         </a>
       </div>
     </form>
-  )
+  );
 }
